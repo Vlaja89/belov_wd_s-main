@@ -1,0 +1,10 @@
+.wp-block-image {
+  @apply container relative; }
+  .wp-block-image.alignfull,
+  .wp-block-image .is-resized,
+  .wp-block-image .aligncenter,
+  .wp-block-image .alignleft,
+  .wp-block-image .alignright {
+    @apply relative; }
+  .wp-block-image.alignfull figcaption {
+    width: calc( 100% - 2rem); }

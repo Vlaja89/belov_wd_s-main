@@ -1,0 +1,181 @@
+//----------------------------------------
+// Section Icon Box - ACF Blocks
+//----------------------------------------
+
+/**** Font Family ****/
+@font-face {
+    font-family: 'FONTSPRINGDEMO-TheSeasonsRegular';
+    src: url("../scss/fonts/FONTSPRINGDEMO-TheSeasonsRegular.woff") format("woff"), url("../scss/fonts/FONTSPRINGDEMO-TheSeasonsRegular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'odin_rounded_-_regular-webfont';
+    src: url("../scss/fonts/odin_rounded_-_regular-webfont.woff") format("woff"), url("../scss/fonts/odin_rounded_-_regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-season-regular: 'FONTSPRINGDEMO-TheSeasonsRegular';
+$font-odin-rounded: 'odin_rounded_-_regular-webfont';
+
+
+$black: #000000;
+$red: #A70505;
+$white: #ffffff;
+
+/**** Section ****/
+.section_icon_box {
+    text-align: center;
+    padding: 90px 0;
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+
+    .section-container {
+        margin: 0 auto;
+        width: 100%;
+
+        @media (min-width: 575px) {
+            width: 540px;
+        }
+
+        @media (min-width: 767px) {
+            width: 720px;
+        }
+
+        @media (min-width: 991px) {
+            width: 960px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 1140px;
+        }
+
+        .main-title {
+            margin-bottom: 65px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 35px;
+            }
+
+            h2 {
+                font-family: $font-season-regular;
+                font-style: italic;
+                font-weight: 100;
+                font-size: 58px;
+
+                @media (max-width: 1280px) {
+                    font-size: 52px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 48px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 44px;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 38px;
+                }
+            }
+        }
+
+        .box-row {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            align-items: start;
+            justify-content: center;
+
+            .single-box {
+                padding: 15px;
+
+                @media (max-width: 767px) {
+                    margin-bottom: 25px;
+                    padding: 10px;
+                }
+
+                &__icon {
+                    img {
+                        height: 95px;
+                        width: 100%;
+                        object-fit: contain;
+
+                        @media (max-width: 767px) {
+                            height: 60px;
+                        }
+                    }
+                }
+
+                &__title {
+                    h4 {
+                        font-family: $font-season-regular;
+                        font-weight: 500;
+                        font-size: 28px;
+
+                        @media (max-width: 991px) {
+                            font-size: 24px;
+                        }
+
+                        @media (max-width: 767px) {
+                            font-size: 20px;
+                        }
+
+                    }
+                }
+
+                &__desc {
+                    min-height: 65px;
+
+                    @media (max-width: 767px) {
+                        min-height: auto;
+                    }
+
+                    p {
+                        font-family: $font-odin-rounded;
+                        line-height: 1.3;
+                    }
+                }
+
+                &__btn {
+                    button {
+                        color: $black;
+                        text-decoration: none;
+                        border-radius: 7px;
+                        box-shadow: 3px 3px 10px 0 rgba(2, 92, 135, 0.3);
+                        background-color: transparent;
+                        padding: 20px 35px 5px;
+                        line-height: 1.1;
+                        border: 1px solid $red;
+                        width: fit-content;
+                        font-family: $font-odin-rounded;
+                        margin: 25px auto;
+                        transition: all 0.3s ease-in-out;
+                        font-size: 18px;
+                        cursor: pointer;
+
+                        @media (max-width: 767px) {
+                            font-size: 16px;
+                            padding: 15px 35px 0px;
+                        }
+
+                        &:hover {
+                            color: $white;
+                            background-color: $red;
+                            text-decoration: none;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

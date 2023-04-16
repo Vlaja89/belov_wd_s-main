@@ -1,0 +1,4 @@
+.wp-block-paragraph {
+  @apply block container; }
+  .entry-content > .wp-block-paragraph {
+    @apply block container; }

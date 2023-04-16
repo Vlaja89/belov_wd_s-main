@@ -1,0 +1,14 @@
+.wp-block-heading {
+  @apply block container; }
+  .wp-block-heading h1 {
+    @apply mb-32; }
+  .wp-block-heading h2 {
+    @apply mb-24; }
+  .wp-block-heading h3 {
+    @apply mb-20; }
+  .wp-block-heading h4 {
+    @apply mb-16; }
+  .wp-block-heading h5 {
+    @apply mb-12; }
+  .wp-block-heading h6 {
+    @apply mb-8; }

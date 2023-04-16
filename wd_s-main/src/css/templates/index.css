@@ -1,0 +1,267 @@
+.comments-link {
+  @apply mt-16;
+}
+
+.comments-area {
+  @apply container mt-24;
+}
+
+.comment-author {
+  @apply mb-16 items-center flex;
+}
+
+.comment-author .avatar {
+  @apply mr-16;
+}
+
+.comment-author .fn {
+  @apply mr-8;
+}
+
+.comment-metadata {
+  @apply mb-16;
+}
+
+.comment-body {
+  @apply py-8;
+}
+
+.comment-content {
+  @apply bg-black bg-opacity-10 p-16;
+}
+
+.bypostauthor .comment-content {
+  @apply border-2 border-black border-solid;
+}
+
+.comment-list .children {
+  @apply ml-16;
+}
+
+.reply {
+  @apply pt-8;
+}
+
+.comment-reply-title a {
+  @apply block text-sm;
+}
+
+.site-footer .site-info {
+  @apply mx-auto my-0 flex justify-between;
+}
+
+.entry-meta {
+  @apply mb-16;
+}
+
+.entry-footer {
+  @apply mt-16;
+}
+
+.cat-links,
+.tag-links {
+  @apply block;
+}
+
+.post-edit-link {
+  @apply block mb-16 mt-16;
+}
+
+.post-container:not(:last-child) {
+  @apply mb-16;
+}
+
+.post-navigation .nav-links {
+  @apply flex flex-col text-center;
+}
+
+@screen tablet-landscape {
+  .post-navigation .nav-links {
+    @apply flex-row justify-between;
+    text-align: unset;
+  }
+}
+
+.post-navigation .nav-next {
+  @apply mt-16;
+}
+
+@screen tablet-landscape {
+  .post-navigation .nav-next {
+    @apply mt-0;
+  }
+}
+
+.updated:not(.published) {
+  @apply hidden;
+}
+
+.scaffolding-nav {
+  @apply bg-gray-800 text-white mb-16 p-16 sticky text-center top-0 w-full z-50;
+}
+
+@screen tablet-portrait {
+  .admin-bar .scaffolding-nav {
+    @apply top-32;
+  }
+}
+
+.scaffolding-nav span {
+  @apply font-semibold;
+}
+
+.scaffolding-nav .link {
+  @apply p-5 text-white no-underline transition-all;
+}
+
+.scaffolding-nav .link:hover,
+.scaffolding-nav .link:focus {
+  @apply underline;
+}
+
+.section-scaffolding {
+  @apply py-10 px-20;
+}
+
+@screen desktop {
+  .section-scaffolding {
+    @apply px-0;
+  }
+}
+
+.section-scaffolding .scaffolding-heading {
+  @apply uppercase;
+}
+
+.scaffolding-document {
+  @apply mb-16;
+}
+
+.scaffolding-document-live {
+  @apply my-16;
+}
+
+.scaffolding-document-header {
+  @apply border-b border-black mb-24 pb-24;
+}
+
+.scaffolding-document-header h3 {
+  @apply m-0 p-0 border-b border-black;
+}
+
+.scaffolding-document-header p {
+  @apply italic mt-12;
+}
+
+.scaffolding-document-content h4,
+.scaffolding-document-content p {
+  @apply mt-0 mb-24 mx-0 text-black;
+}
+
+.scaffolding-document-content pre {
+  @apply mt-0 mx-0 mb-24 p-24 bg-gray-200 text-black whitespace-pre-wrap;
+}
+
+.scaffolding-document-content code {
+  @apply p-6 bg-gray-200 whitespace-pre-wrap;
+}
+
+.scaffolding-document.scaffolding-colors .scaffolding-document-header,
+.scaffolding-document.scaffolding-fonts .scaffolding-document-header {
+  @apply border-none;
+}
+
+.scaffolding-document.scaffolding-colors .scaffolding-document-content,
+.scaffolding-document.scaffolding-fonts .scaffolding-document-content {
+  @apply block;
+}
+
+.scaffolding-document.tabs {
+  @apply block w-full;
+}
+
+.scaffolding-document.tabs .tab-toggle {
+  @apply opacity-0 absolute z-0;
+}
+
+.scaffolding-document.tabs .tab-toggle:focus+.tab-label {
+  @apply bg-blend-darken bg-wds-orange;
+}
+
+.scaffolding-document.tabs .tab-toggle:checked~.tab-content {
+  @apply p-16;
+  max-height: 9999px;
+}
+
+.scaffolding-document.tabs .tab-toggle:checked+.tab-label::after {
+  @apply rotate-90 transform bg-none;
+}
+
+.scaffolding-document.tabs .tab {
+  @apply text-white overflow-hidden w-full bg-gray-100;
+}
+
+.scaffolding-document.tabs .tab-label {
+  @apply bg-gray-800 text-white cursor-pointer flex justify-between p-16 mb-0;
+  /* Icon */
+}
+
+.scaffolding-document.tabs .tab-label:hover {
+  @apply bg-gray-800;
+}
+
+.scaffolding-document.tabs .tab-label::before {
+  @apply hidden;
+}
+
+.scaffolding-document.tabs .tab-label::after {
+  @apply h-16 text-center transition-all right-20 w-16 text-white bg-none;
+  content: '\276F';
+  left: unset;
+  top: unset;
+}
+
+.scaffolding-document.tabs .tab-content {
+  @apply max-h-0 py-0 px-16 transition-all;
+}
+
+.scaffolding-document .cta {
+  @apply my-10;
+}
+
+.scaffolding-document .icons-container .quarter {
+  @apply items-center flex flex-col h-80 justify-end text-center;
+}
+
+.scaffolding-document .icons-container .quarter svg {
+  @apply mb-10;
+}
+
+.swatch-container {
+  @apply relative block;
+}
+
+@screen tablet-portrait {
+  .swatch-container {
+    @apply grid grid-cols-12 gap-24;
+  }
+}
+
+.swatch-container .swatch {
+  @apply border border-black h-192 mb-24 mr-20 overflow-hidden text-center w-full relative;
+}
+
+@screen tablet-portrait {
+  .swatch-container .swatch {
+    @apply col-span-3;
+  }
+}
+
+.swatch-container .swatch header {
+  @apply text-center shadow-md items-center text-white flex flex-col justify-center;
+  height: calc(100% - 40px);
+}
+
+.swatch-container .swatch footer {
+  @apply p-10 absolute bg-white bottom-0 border-t border-black w-full;
+}

@@ -1,0 +1,27 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="included-php-files">Included <code>PHP</code> Files</h1>
+<p>Use the <code>/inc</code> directory to declare any theme functionality. All files in this directory are imported inside of <code>functions.php</code>. </p>
+<h2 id="directories">Directories</h2>
+<p>The <code>/inc</code> directory is organized into sub-directories based on the functionality/purpose of the code. These directories can be modified as needed, but the following structure is recommended:</p>
+<pre><code class="lang-text">inc/
+└─── customizer/    (functions relating to the theme customizer)
+└─── functions/     (general functions that don&#39;t fit into any other directory)
+└─── hooks/         (theme hooks)
+└─── post-types/    (theme post type registrations &amp; functions)
+└─── scaffolding/   (theme scaffolding functions)
+└─── setup/         (functions relating to the theme setup)
+└─── shortcodes/    (shortcode registrations)
+└─── template-tags/ (functions that render markup for use in theme templates)
+└─── README.md
+</code></pre>
+<h2 id="filenames">Filenames</h2>
+<p>As a general rule, each <code>.php</code> file should contain a single function/action which should match the name of the file (replacing underscores with hyphens in the filename).</p>
+<p>For example, <code>function demo_function() {...}</code> would be declared in a file named <code>demo-function.php</code> and stored inside an appropriate <code>/inc</code> sub-directory.</p>
+
+      </body>
+    </html>

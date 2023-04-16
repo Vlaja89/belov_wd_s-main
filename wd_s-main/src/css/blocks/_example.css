@@ -1,0 +1,13 @@
+.wd-example {
+  @apply container mb-48; }
+  .wd-example-title {
+    @apply font-serif text-3xl; }
+  .wd-example-body {
+    @apply text-base; }
+
+.wd-another-example {
+  @apply py-48; }
+  .wd-another-example-title {
+    @apply font-serif text-3xl; }
+  .wd-another-example-body {
+    @apply text-base; }
